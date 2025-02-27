@@ -1,2 +1,2 @@
-# DPP
-Progetto di tirocinio per lo sviluppo del Digital Product Passport
+# Digital Product Passport
+Progetto di tirocinio per lo sviluppo del Passaporto Digitale di Prodotto
