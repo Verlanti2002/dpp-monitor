@@ -10,7 +10,7 @@ Questo progetto implementa un **Digital Product Passport** con un'architettura a
 - Container & Orchestrazione: Docker, Kubernetes
 - API Gateway: Kong
 - Messaggistica e Task Asincroni: Celery + Redis
-- CI/CD & Testing: GitHub Actions, Pytest
+- CI/CD & Testing: GitHub Actions, Postman e Pytest
 
 ## 📌 Setup Ambiente di Sviluppo
 ### 1️⃣ Clona il repository
