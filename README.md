@@ -4,10 +4,13 @@
 Questo progetto implementa un **Digital Product Passport** con un'architettura a microservizi.
 
 ## 📌 Tecnologie Usate
-- Python (Django, FastAPI)
-- PostgreSQL & MongoDB
-- Docker & Kubernetes
-- JWT per autenticazione
+- Backend API: Django REST Framework, FastAPI, Celery
+- Database: PostgreSQL, MongoDB
+- Autenticazione: JWT, Django SimpleJWT, Kong per autenticazione
+- Container & Orchestrazione: Docker, Kubernetes
+- API Gateway: Kong
+- Messaggistica e Task Asincroni: Celery + Redis
+- CI/CD & Testing: GitHub Actions, Pytest
 
 ## 📌 Setup Ambiente di Sviluppo
 ### 1️⃣ Clona il repository
