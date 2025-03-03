@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  dpp-monitor:
+    build: .
+    deploy:
+      replicas: 3  # Avvia 3 repliche del monitor
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=True

@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dpp-monitor
+spec:
+  replicas: 3  # Numero di istanze che vuoi avviare
+  selector:
+    matchLabels:
+      app: dpp-monitor
+  template:
+    metadata:
+      labels:
+        app: dpp-monitor
+    spec:
+      containers:
+        - name: dpp-monitor
+          image: dpp-monitor:latest  # Assicurati che l'immagine sia corretta
+          ports:
+            - containerPort: 8000
+          env:
+            - name: DEBUG
+              value: "True"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dpp-monitor-service
+spec:
+  selector:
+    app: dpp-monitor
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+  type: LoadBalancer
